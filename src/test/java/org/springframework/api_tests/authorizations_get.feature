@@ -58,12 +58,8 @@ Scenario: Bad request to authorizations with invalid parameter
   When method get
   Then status 400
   And match responseHeaders['api-version'] == '1.0.0'
-  And match response == anyOf(
+  And match response == { error: '#string', description: '#string' } || response == 
   """
-    { 
-      error: '#string', 
-      description: '#string' 
-    },
     { 
       error: '#regex(^validation/.*)', 
       description: '#string', 
@@ -71,4 +67,4 @@ Scenario: Bad request to authorizations with invalid parameter
       value: '#present' 
     }
   """
-  )
+
