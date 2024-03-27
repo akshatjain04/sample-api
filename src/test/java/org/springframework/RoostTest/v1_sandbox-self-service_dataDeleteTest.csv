@@ -1,0 +1,11 @@
+x-hsbc-client-id,AdditionalCSVvaluInfo,x-hsbc-client-secret,x-hsbc-profile-id,product-category,category-version,api-name,api-version,table-name,product-name,statusCode
+client001,account-information-v2,secret001,profile001,loans,1.0,loan-api,v1,loan_table,Personal Loan,200
+client002,account-information-v2,secret002,profile002,credit-cards,1.1,credit-card-api,v2,credit_card_table,Gold Credit Card,200
+client003,account-information-v2,secret003,profile003,savings,1.2,savings-api,v1,savings_table,High Yield Savings,200
+client004,account-information-v2,secret004,profile004,mortgages,1.3,mortgage-api,v1,mortgage_table,Fixed Rate Mortgage,200
+client005,account-information-v2,secret005,profile005,investments,1.4,investment-api,v2,investment_table,Stocks Portfolio,200
+client006,account-information-v2,secret006,profile006,insurance,1.5,insurance-api,v3,insurance_table,Health Insurance,200
+client007,account-information-v2,secret007,profile007,payments,1.6,payment-api,v1,payment_table,Online Payment,200
+client008,account-information-v2,secret008,profile008,checking,1.7,checking-api,v1,checking_table,Premium Checking,200
+client009,account-information-v2,secret009,profile009,retirement,1.8,retirement-api,v2,retirement_table,401k Plan,200
+client010,account-information-v2,secret010,profile010,brokerage,1.9,brokerage-api,v1,brokerage_table,Stock Brokerage,200
