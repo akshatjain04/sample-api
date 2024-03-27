@@ -1,0 +1,11 @@
+accountId,AdditionalCSVvaluInfo,Authorization,x-fapi-auth-date,x-fapi-customer-ip-address,x-fapi-interaction-id,Accept-Language,fromDate,toDate,statusCode
+user01,169.254.169.254,Bearer abcdef12345,2023-01-15,192.168.1.1,interaction01,en-HK,2023-01-01,2023-01-10,200
+user02,169.254.169.254,Bearer 67890fghij,2023-01-16,192.168.1.2,interaction02,zh-HK,2023-01-02,2023-01-11,401
+user03,169.254.169.254,Bearer klmno54321,2023-01-17,192.168.1.3,interaction03,zh-CN,2023-01-03,2023-01-12,403
+user04,169.254.169.254,Bearer pqrst98765,2023-01-18,192.168.1.4,interaction04,en-HK,2023-01-04,2023-01-13,200
+user05,169.254.169.254,Bearer uvwxyz12345,2023-01-19,192.168.1.5,interaction05,zh-HK,2023-01-05,2023-01-14,429
+user06,169.254.169.254,Bearer abcde54321,2023-01-20,192.168.1.6,interaction06,en-HK,2023-01-06,2023-01-15,500
+user07,169.254.169.254,Bearer 67890lmnop,2023-01-21,192.168.1.7,interaction07,zh-CN,2023-01-07,2023-01-16,400
+user08,169.254.169.254,Bearer qrstuv98765,2023-01-22,192.168.1.8,interaction08,en-HK,2023-01-08,2023-01-17,200
+user09,169.254.169.254,Bearer wxyz67890,2023-01-23,192.168.1.9,interaction09,zh-HK,2023-01-09,2023-01-18,503
+user10,169.254.169.254,Bearer hijklm12345,2023-01-24,192.168.1.10,interaction10,en-HK,2023-01-10,2023-01-19,200
