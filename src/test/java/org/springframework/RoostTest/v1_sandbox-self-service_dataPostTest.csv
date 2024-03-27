@@ -1,0 +1,11 @@
+x-hsbc-client-id,AdditionalCSVvaluInfo,x-hsbc-client-secret,x-hsbc-profile-id,product-category,category-version,api-name,api-version,table-name,product-name,file,statusCode
+client123,account-information-v2,secretABC,profile6789,investments,1.0,account-api,2.3,accounts_table,GoldInvestment,binarydata1,200
+client456,account-information-v2,secretDEF,profile9876,savings,1.2,payment-api,3.1,payments_table,SilverSavings,binarydata2,200
+client789,account-information-v2,secretGHI,profile6543,loans,2.0,loan-api,1.0,loans_table,AutoLoan,binarydata3,200
+client012,account-information-v2,secretJKL,profile3210,mortgages,1.5,mortgage-api,2.0,mortgages_table,HomeMortgage,binarydata4,200
+client345,account-information-v2,secretMNO,profile4321,credit-cards,1.1,card-api,1.5,cards_table,PlatinumCard,binarydata5,200
+client678,account-information-v2,secretPQR,profile5432,insurance,2.2,insurance-api,2.7,insurance_table,LifeInsurance,binarydata6,200
+client901,account-information-v2,secretSTU,profile6543,retirement,3.0,retirement-api,3.3,retirement_table,PensionPlan,binarydata7,200
+client234,account-information-v2,secretVWX,profile7654,checking,1.4,checking-api,1.8,checkings_table,BasicChecking,binarydata8,200
+client567,account-information-v2,secretYZA,profile8765,wealth,2.5,wealth-api,4.0,wealth_table,PrivateWealth,binarydata9,200
+client890,account-information-v2,secretBCD,profile9876,deposits,2.1,deposit-api,2.9,deposits_table,FixedDeposit,binarydata10,200
