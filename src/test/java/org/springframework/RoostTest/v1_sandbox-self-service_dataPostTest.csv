@@ -1,0 +1,11 @@
+x-hsbc-client-id,AdditionalCSVvaluInfo,x-hsbc-client-secret,x-hsbc-profile-id,product-category,category-version,api-name,api-version,table-name,product-name,file,statusCode
+client123,account-information-v2,secretABC,profile456,finance,1.0,account-api,2.0,customers,premium-banking,report1.pdf,200
+client124,account-information-v2,secretDEF,profile457,investment,1.1,transaction-api,2.1,transactions,wealth-management,report2.pdf,200
+client125,account-information-v2,secretGHI,profile458,insurance,1.2,insurance-api,2.2,policies,life-insurance,report3.pdf,200
+client126,account-information-v2,secretJKL,profile459,loans,1.3,loan-api,2.3,loans,car-loan,report4.pdf,200
+client127,account-information-v2,secretMNO,profile460,savings,1.4,savings-api,2.4,accounts,savings-account,report5.pdf,200
+client128,account-information-v2,secretPQR,profile461,credit-cards,1.5,creditcard-api,2.5,creditcards,platinum-card,report6.pdf,200
+client129,account-information-v2,secretSTU,profile462,mortgages,1.6,mortgage-api,2.6,mortgage,housing-loan,report7.pdf,200
+client130,account-information-v2,secretVWX,profile463,payments,1.7,payment-api,2.7,payments,mobile-pay,report8.pdf,200
+client131,account-information-v2,secretYZA,profile464,checking,1.8,checking-api,2.8,checkings,business-account,report9.pdf,200
+client132,account-information-v2,secretBCD,profile465,retirement,1.9,retirement-api,2.9,retirement,retirement-fund,report10.pdf,200
