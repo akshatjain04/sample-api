@@ -1,0 +1,11 @@
+Authorization,AdditionalCSVvaluInfo,Content-Type,x-fapi-auth-date,x-fapi-customer-ip-address,x-fapi-interaction-id,Accept-Language,data,shareCompanyName,statusCode
+Bearer abcdef12345,169.254.169.254,application/json,2023-04-01T12:00:00Z,192.168.1.1,uuid-1234,en-HK,"[45, 29, 86]",Yes,200
+Bearer ghijkl67890,169.254.169.254,application/xml,2023-04-02T13:15:30Z,192.168.1.2,uuid-5678,zh-HK,"[39]",No,401
+Bearer mnopqr12345,169.254.169.254,text/html,2023-04-03T08:45:00Z,192.168.1.3,uuid-9101,zh-CN,"[23, 52]",Yes,403
+Bearer stuvwx67890,169.254.169.254,application/json,2023-04-04T17:30:15Z,192.168.1.4,uuid-1121,en-HK,"[64, 38]",No,405
+Bearer yzabcd12345,169.254.169.254,application/xml,2023-04-05T22:00:00Z,192.168.1.5,uuid-3141,zh-HK,"[47]",Yes,406
+Bearer efghij67890,169.254.169.254,text/html,2023-04-06T06:15:45Z,192.168.1.6,uuid-5161,zh-CN,"[29, 33, 21]",No,415
+Bearer klmnop12345,169.254.169.254,application/json,2023-04-07T14:30:30Z,192.168.1.7,uuid-7181,en-HK,"[58]",Yes,429
+Bearer qrstuv67890,169.254.169.254,application/xml,2023-04-08T19:45:15Z,192.168.1.8,uuid-9201,zh-HK,"[32, 46]",No,500
+Bearer wxyzab12345,169.254.169.254,text/html,2023-04-09T11:00:00Z,192.168.1.9,uuid-1221,zh-CN,"[53, 37, 29]",Yes,503
+Bearer cdefgh67890,169.254.169.254,application/json,2023-04-10T16:15:45Z,192.168.1.10,uuid-3241,en-HK,"[41]",No,504
