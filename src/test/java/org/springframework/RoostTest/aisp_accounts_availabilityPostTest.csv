@@ -1,0 +1,11 @@
+Authorization,AdditionalCSVvaluInfo,Content-Type,x-fapi-auth-date,x-fapi-customer-ip-address,x-fapi-interaction-id,Accept-Language,data,shareCompanyName,statusCode
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-01T12:00:00Z,192.168.1.1,67f1c07b-aee1-41d7-c81a-5854f1b8a163,en-HK,["data1"],Yes,200
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-02T12:10:00Z,192.168.1.2,67f1c07b-aee1-41d7-c81a-5854f1b8a164,zh-HK,["data2","data3"],No,401
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-03T12:20:00Z,192.168.1.3,67f1c07b-aee1-41d7-c81a-5854f1b8a165,zh-CN,["data4"],Yes,403
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-04T12:30:00Z,192.168.1.4,67f1c07b-aee1-41d7-c81a-5854f1b8a166,en-HK,["data5","data6","data7"],No,405
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-05T12:40:00Z,192.168.1.5,67f1c07b-aee1-41d7-c81a-5854f1b8a167,zh-HK,["data8"],Yes,406
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-06T12:50:00Z,192.168.1.6,67f1c07b-aee1-41d7-c81a-5854f1b8a168,zh-CN,["data9","data10"],No,415
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-07T13:00:00Z,192.168.1.7,67f1c07b-aee1-41d7-c81a-5854f1b8a169,en-HK,["data11"],Yes,429
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-08T13:10:00Z,192.168.1.8,67f1c07b-aee1-41d7-c81a-5854f1b8a170,zh-HK,["data12","data13","data14"],No,500
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-09T13:20:00Z,192.168.1.9,67f1c07b-aee1-41d7-c81a-5854f1b8a171,zh-CN,["data15"],Yes,503
+Bearer eyJhbGciOiJIUzI1NiIsIn,169.254.169.254,application/json,2023-03-10T13:30:00Z,192.168.1.10,67f1c07b-aee1-41d7-c81a-5854f1b8a172,en-HK,["data16","data17"],No,504
