@@ -1,0 +1,11 @@
+Authorization,AdditionalCSVvaluInfo,Content-Type,x-fapi-auth-date,x-fapi-customer-ip-address,x-fapi-interaction-id,Accept-Language,data,permissions,expirationDate,statusCode
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-01T12:00:00Z,192.168.1.1,fapi123456,en-HK,"{""name"":""John Doe"",""age"":30}",["read","write"],2023-12-31T23:59:59Z,201
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2023-01-02T12:00:00Z,192.168.1.2,fapi123457,zh-HK,"{""name"":""Jane Smith"",""age"":25}",["read"],2023-12-31T23:59:59Z,400
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/csv,2023-01-03T12:00:00Z,192.168.1.3,fapi123458,zh-CN,"{""name"":""Alice Brown"",""age"":28}",["write"],2023-12-31T23:59:59Z,401
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-04T12:00:00Z,192.168.1.4,fapi123459,en-HK,"{""name"":""Bob Taylor"",""age"":32}",["read","write","delete"],2023-12-31T23:59:59Z,403
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/html,2023-01-05T12:00:00Z,192.168.1.5,fapi123460,zh-HK,"{""name"":""Charlie Cox"",""age"":29}",["read","delete"],2023-12-31T23:59:59Z,405
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2023-01-06T12:00:00Z,192.168.1.6,fapi123461,zh-CN,"{""name"":""Diana Prince"",""age"":27}",["write","delete"],2023-12-31T23:59:59Z,406
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/plain,2023-01-07T12:00:00Z,192.168.1.7,fapi123462,en-HK,"{""name"":""Ethan Hunt"",""age"":35}",["read"],2023-12-31T23:59:59Z,415
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-08T12:00:00Z,192.168.1.8,fapi123463,zh-HK,"{""name"":""Fiona Gallagher"",""age"":24}",["write","read"],2023-12-31T23:59:59Z,429
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/csv,2023-01-09T12:00:00Z,192.168.1.9,fapi123464,zh-CN,"{""name"":""George King"",""age"":33}",["delete"],2023-12-31T23:59:59Z,500
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2023-01-10T12:00:00Z,192.168.1.10,fapi123465,en-HK,"{""name"":""Hannah Abbott"",""age"":26}",["read","write","delete"],2023-12-31T23:59:59Z,503
