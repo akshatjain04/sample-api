@@ -1,0 +1,11 @@
+Authorization,AdditionalCSVvaluInfo,Content-Type,x-fapi-auth-date,x-fapi-customer-ip-address,x-fapi-interaction-id,Accept-Language,ack,returnImmediately,maxEvents,statusCode
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2021-03-01T12:00:00Z,192.168.1.10,cd82a4df-c635-4bcf-9193-0a1a2b7546e2,en-HK,[1,2,3],true,50,201
+Bearer eyJhbGciOiJIUzI1NiJ9,169.254.169.254,application/xml,2021-03-01T12:10:00Z,192.168.1.11,ebc42010-9387-4b56-8344-ee90dce9d8a4,zh-HK,[2,3,4],false,30,400
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/plain,2021-03-01T12:20:00Z,192.168.1.12,ae4a4b56-fb4b-4d50-9f0c-842a75b6b0b6,zh-CN,[3,4,5],true,20,401
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2021-03-01T12:30:00Z,192.168.1.13,5c1a462b-2dfd-4086-a5d6-0f752e9f0cfe,en-HK,[4,5,6],false,60,403
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/html,2021-03-01T12:40:00Z,192.168.1.14,cb76a8e2-c0b2-4d2b-a7b2-0a1b2b7546e2,zh-HK,[5,6,7],true,10,405
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2021-03-01T12:50:00Z,192.168.1.15,fb5b3b30-e1c3-4eef-8d76-1e4a2b7546e2,zh-CN,[6,7,8],false,40,406
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/plain,2021-03-01T13:00:00Z,192.168.1.16,9b8b9d2c-5b9d-47ad-bdae-0d1a2b7546e2,en-HK,[7,8,9],true,70,415
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2021-03-01T13:10:00Z,192.168.1.17,4c2c3c4d-2c9d-4eec-b1ae-1e4a2b7546e2,zh-HK,[8,9,10],false,80,429
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/html,2021-03-01T13:20:00Z,192.168.1.18,1d3d4d5e-3d9d-4dad-c2ae-2d1a2b7546e2,zh-CN,[9,10,11],true,90,500
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2021-03-01T13:30:00Z,192.168.1.19,0e4e5e6f-4d9d-5eaf-d3ae-3d1a2b7546e2,en-HK,[10,11,12],false,100,503
