@@ -53,7 +53,7 @@ public class directdebitconsentsConsentIdGetTest {
     public void directdebitconsentsConsentIdGet_Test() throws JSONException {
         this.setUp();
         for (Map<String, String> testData : envList) {
-          RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty()) ? testData.get("BASE_URL"): "https://hsbcdeveloperportalpreprod.digitalapicraft.com:8085/https://sandbox.ob.business.hsbc.com.hk/mock/open-banking/v1.0/direct-debit";  
+          RestAssured.baseURI = (testData.get("BASE_URL") != null && !testData.get("BASE_URL").isEmpty()) ? testData.get("BASE_URL"): "https://sandbox.ob.business.hsbc.com.hk/mock/open-banking/v1.0/direct-debit";  
   
                 Response responseObj = given()
 				.header("Authorization", testData.get("Authorization") != null ? testData.get("Authorization") : "")
