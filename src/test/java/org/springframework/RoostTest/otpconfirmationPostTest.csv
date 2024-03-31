@@ -1,0 +1,11 @@
+Authorization,AdditionalCSVvaluInfo,x-fapi-customer-ip-address,x-fapi-auth-date,x-fapi-interaction-id,x-idempotency-key,mandateIdentification,otpIdentificationNumber,otpPassword,creditorAccount,bankCode,accountIdentification,currency,accountSchemeName,accountSubType,statusCode
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.1,2023-04-01T00:00:00Z,interaction-01,idempotency-01,mandate-01,otpId-01,otpPass01,{},{},account-01,USD,BBAN,Current Account,201
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.2,2023-04-02T00:00:00Z,interaction-02,idempotency-02,mandate-02,otpId-02,otpPass02,{},{},account-02,EUR,BBAN,Savings Account,400
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.3,2023-04-03T00:00:00Z,interaction-03,idempotency-03,mandate-03,otpId-03,otpPass03,{},{},account-03,GBP,BBAN,Student Account,401
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.4,2023-04-04T00:00:00Z,interaction-04,idempotency-04,mandate-04,otpId-04,otpPass04,{},{},account-04,JPY,BBAN,CACC,403
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.5,2023-04-05T00:00:00Z,interaction-05,idempotency-05,mandate-05,otpId-05,otpPass05,{},{},account-05,AUD,BBAN,CARD,404
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.6,2023-04-06T00:00:00Z,interaction-06,idempotency-06,mandate-06,otpId-06,otpPass06,{},{},account-06,CAD,BBAN,DDA,405
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.7,2023-04-07T00:00:00Z,interaction-07,idempotency-07,mandate-07,otpId-07,otpPass07,{},{},account-07,CHF,BBAN,CDA,406
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.8,2023-04-08T00:00:00Z,interaction-08,idempotency-08,mandate-08,otpId-08,otpPass08,{},{},account-08,CNY,BBAN,ILA,415
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.9,2023-04-09T00:00:00Z,interaction-09,idempotency-09,mandate-09,otpId-09,otpPass09,{},{},account-09,INR,BBAN,CCA,500
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.10,2023-04-10T00:00:00Z,interaction-10,idempotency-10,mandate-10,otpId-10,otpPass10,{},{},account-10,KRW,BBAN,OTH,201
