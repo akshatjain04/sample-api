@@ -1,0 +1,11 @@
+Authorization,AdditionalCSVvaluInfo,x-fapi-customer-ip-address,x-fapi-auth-date,x-fapi-interaction-id,x-idempotency-key,merchantInstructionIdentification,creditorAccount,bankCode,accountIdentification,currency,accountSchemeName,accountSubType,statusCode
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.1,2023-04-01T00:00:00Z,interaction-01,key-01,merchant-001,{\"id\":\"123456789\"},123,ACC001,USD,BBAN,Current Account,201
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.2,2023-04-01T01:00:00Z,interaction-02,key-02,merchant-002,{\"id\":\"987654321\"},234,ACC002,EUR,BBAN,Savings Account,201
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.3,2023-04-01T02:00:00Z,interaction-03,key-03,merchant-003,{\"id\":\"123123123\"},345,ACC003,GBP,BBAN,Student Account,400
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.4,2023-04-01T03:00:00Z,interaction-04,key-04,merchant-004,{\"id\":\"456456456\"},456,ACC004,JPY,BBAN,CACC,401
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.5,2023-04-01T04:00:00Z,interaction-05,key-05,merchant-005,{\"id\":\"789789789\"},567,ACC005,AUD,BBAN,CARD,403
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.6,2023-04-01T05:00:00Z,interaction-06,key-06,merchant-006,{\"id\":\"112233445\"},678,ACC006,CAD,BBAN,DDA,404
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.7,2023-04-01T06:00:00Z,interaction-07,key-07,merchant-007,{\"id\":\"556677889\"},789,ACC007,CHF,BBAN,CDA,405
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.8,2023-04-01T07:00:00Z,interaction-08,key-08,merchant-008,{\"id\":\"998877665\"},890,ACC008,CNY,BBAN,ILA,406
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.9,2023-04-01T08:00:00Z,interaction-09,key-09,merchant-009,{\"id\":\"443322110\"},901,ACC009,INR,BBAN,CCA,415
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,LbGpjj8KaH5wrEfg,192.168.1.10,2023-04-01T09:00:00Z,interaction-10,key-10,merchant-010,{\"id\":\"665544332\"},012,ACC010,KRW,BBAN,OTH,500
