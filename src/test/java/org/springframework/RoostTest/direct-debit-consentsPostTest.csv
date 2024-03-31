@@ -1,0 +1,11 @@
+Authorization,AdditionalCSVvaluInfo,Content-Type,x-fapi-auth-date,x-fapi-customer-ip-address,x-fapi-interaction-id,Accept-Language,data,permissions,expirationDate,statusCode
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-01T12:00:00Z,192.168.1.1,uuid-1234,en-HK,"{""accountId"":""12345""}",["read","write"],2023-12-31T23:59:59Z,201
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2023-01-02T12:00:00Z,192.168.1.2,uuid-1235,zh-HK,"{""accountId"":""12346""}",["read"],2023-12-30T23:59:59Z,400
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-03T12:00:00Z,192.168.1.3,uuid-1236,zh-CN,"{""accountId"":""12347""}",["write"],2023-12-29T23:59:59Z,401
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/html,2023-01-04T12:00:00Z,192.168.1.4,uuid-1237,en-HK,"{""accountId"":""12348""}",["read","write","delete"],2023-12-28T23:59:59Z,403
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-05T12:00:00Z,192.168.1.5,uuid-1238,zh-HK,"{""accountId"":""12349""}",["read","delete"],2023-12-27T23:59:59Z,405
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2023-01-06T12:00:00Z,192.168.1.6,uuid-1239,zh-CN,"{""accountId"":""12350""}",["write","delete"],2023-12-26T23:59:59Z,406
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/html,2023-01-07T12:00:00Z,192.168.1.7,uuid-1240,en-HK,"{""accountId"":""12351""}",["read"],2023-12-25T23:59:59Z,415
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-08T12:00:00Z,192.168.1.8,uuid-1241,zh-HK,"{""accountId"":""12352""}",["write","read"],2023-12-24T23:59:59Z,429
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2023-01-09T12:00:00Z,192.168.1.9,uuid-1242,zh-CN,"{""accountId"":""12353""}",["delete"],2023-12-23T23:59:59Z,500
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/html,2023-01-10T12:00:00Z,192.168.1.10,uuid-1243,en-HK,"{""accountId"":""12354""}",["read","write","delete"],2023-12-22T23:59:59Z,503
