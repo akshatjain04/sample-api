@@ -62,12 +62,12 @@ public class TestdataLoader {
 
         while ((line = br.readLine()) != null) {
           if (!headerSkipped) {
-            headers.addAll(List.of(line.split(",")));
+            headers.addAll(List.of(line.split("\\^\\|\\^")));
             headerSkipped = true;
             continue;
           }
 
-          String[] values = line.split(",");
+          String[] values = line.split("\\^\\|\\^");
           if (values.length > 0) {
             Map<String, String> row = new HashMap<>();
             for (int i = 0; i < Math.min(headers.size(), values.length); i++) {
