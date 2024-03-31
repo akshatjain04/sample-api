@@ -1,0 +1,11 @@
+Authorization,AdditionalCSVvaluInfo,Content-Type,x-fapi-auth-date,x-fapi-customer-ip-address,x-fapi-interaction-id,Accept-Language,data,permissions,expirationDate,statusCode
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-01T12:00:00Z,192.168.1.1,uuid-1234,en-HK,"{""name"":""John Doe""}","[""read"",""write""]",2023-01-02T12:00:00Z,201
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2023-01-01T13:00:00Z,192.168.1.2,uuid-2345,zh-HK,"{""name"":""Jane Smith""}","[""read""]",2023-01-02T13:00:00Z,400
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/plain,2023-01-01T14:00:00Z,192.168.1.3,uuid-3456,zh-CN,"{""name"":""Alice Johnson""}","[""write""]",2023-01-02T14:00:00Z,401
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-01T15:00:00Z,192.168.1.4,uuid-4567,en-HK,"{""name"":""Dave Lee""}","[""delete""]",2023-01-02T15:00:00Z,403
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2023-01-01T16:00:00Z,192.168.1.5,uuid-5678,zh-HK,"{""name"":""Mohammed Ali""}","[""read"",""update""]",2023-01-02T16:00:00Z,405
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/plain,2023-01-01T17:00:00Z,192.168.1.6,uuid-6789,zh-CN,"{""name"":""Chen Wei""}","[""write"",""execute""]",2023-01-02T17:00:00Z,406
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-01T18:00:00Z,192.168.1.7,uuid-7890,en-HK,"{""name"":""Emily Zhang""}","[""read"",""write"",""delete""]",2023-01-02T18:00:00Z,415
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/xml,2023-01-01T19:00:00Z,192.168.1.8,uuid-8901,zh-HK,"{""name"":""Satoshi Nakamoto""}","[""read""]",2023-01-02T19:00:00Z,429
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,text/plain,2023-01-01T20:00:00Z,192.168.1.9,uuid-9012,zh-CN,"{""name"":""Liu Wei""}","[""execute""]",2023-01-02T20:00:00Z,500
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-01T21:00:00Z,192.168.1.10,uuid-0123,en-HK,"{""name"":""Kim Lee""}","[""update"",""read""]",2023-01-02T21:00:00Z,503
