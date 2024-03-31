@@ -1,0 +1,11 @@
+Authorization,AdditionalCSVvaluInfo,Content-Type,x-fapi-auth-date,x-fapi-customer-ip-address,x-fapi-interaction-id,Accept-Language,data,permissions,expirationDate,statusCode
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-01T12:00:00Z,192.168.1.1,uuid-1234,en-HK,"{""name"":""John Doe"",""age"":30}",["read","write"],2023-12-31T23:59:59Z,201
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-02T12:00:00Z,192.168.1.2,uuid-2345,zh-HK,"{""name"":""Jane Smith"",""age"":25}",["read"],2024-12-31T23:59:59Z,400
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-03T12:00:00Z,192.168.1.3,uuid-3456,zh-CN,"{""name"":""Alice Johnson"",""age"":28}",["write"],2025-12-31T23:59:59Z,401
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-04T12:00:00Z,192.168.1.4,uuid-4567,en-HK,"{""name"":""Michael Brown"",""age"":35}",["read","write","delete"],2023-06-30T23:59:59Z,403
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-05T12:00:00Z,192.168.1.5,uuid-5678,zh-HK,"{""name"":""Emily Davis"",""age"":22}",["read"],2023-11-30T23:59:59Z,405
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-06T12:00:00Z,192.168.1.6,uuid-6789,zh-CN,"{""name"":""David Wilson"",""age"":40}",["write"],2024-01-31T23:59:59Z,406
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-07T12:00:00Z,192.168.1.7,uuid-7890,en-HK,"{""name"":""Chloe Miller"",""age"":27}",["read","update"],2023-10-31T23:59:59Z,415
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-08T12:00:00Z,192.168.1.8,uuid-8901,zh-HK,"{""name"":""Lucas Anderson"",""age"":31}",["read","write","share"],2024-03-31T23:59:59Z,429
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-09T12:00:00Z,192.168.1.9,uuid-9012,zh-CN,"{""name"":""Megan Thomas"",""age"":29}",["write","delete"],2025-07-31T23:59:59Z,500
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,169.254.169.254,application/json,2023-01-10T12:00:00Z,192.168.1.10,uuid-0123,en-HK,"{""name"":""Oliver Martinez"",""age"":33}",["read","update","execute"],2023-09-30T23:59:59Z,503
