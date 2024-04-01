@@ -1,0 +1,65 @@
+{
+  "item": [
+    {
+      "id": "2e85580b-6421-4ad6-ad3b-cb29972486cf",
+      "name": "direct-debit-consents",
+      "item": [
+        null,
+        {
+          "id": "236f8764-1502-4ba1-af52-180182629d5b",
+          "name": "{consentId}",
+          "item": [
+            null,
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    null,
+    null,
+    {
+      "id": "3a681fd3-6f01-4fea-a536-10fbc3decc04",
+      "name": "status",
+      "item": [
+        null,
+        null
+      ],
+      "event": []
+    },
+    null,
+    null
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "v1.0",
+      "key": "version"
+    },
+    {
+      "type": "string",
+      "value": "https://hsbcdeveloperportalpreprod.digitalapicraft.com:8085/https://sandbox.ob.business.hsbc.com.hk/mock/open-banking/v1.0/direct-debit",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "d1bc2575-9b51-4b51-98a5-c6e0da002557",
+    "name": "Real-time Direct Debit API Specification for HK CMB",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Swagger for Real-time Direct Debit API Specification",
+      "type": "text/plain"
+    }
+  }
+}
