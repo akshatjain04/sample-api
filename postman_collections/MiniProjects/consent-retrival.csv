@@ -1,0 +1,11 @@
+consentId,version,statusCode,scenario
+sunt labore ex minim,1,200,OK
+sunt labore ex minim,2,400,Bad Request
+sunt labore ex minim,3,401,Unauthorised
+sunt labore ex minim,4,403,Forbidden
+sunt labore ex minim,5,405,Method Not Allowed
+sunt labore ex minim,6,406,Not Acceptable
+sunt labore ex minim,7,429,Too Many Requests
+169.254.169.254,8,500,Internal Server Error
+169.254.169.254,9,503,Service Unavailable
+169.254.169.254,10,504,Gateway Timeout

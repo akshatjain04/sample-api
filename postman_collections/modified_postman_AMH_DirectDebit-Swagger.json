@@ -1,0 +1,1132 @@
+{
+  "item": [
+    {
+      "id": "35c50b02-1bb3-4088-a859-32964891de06",
+      "name": "direct-debit-consents",
+      "item": [
+        null,
+        {
+          "id": "11cd296f-5b59-462a-b22d-c533d9fdceb9",
+          "name": "{consentId}",
+          "item": [
+            {
+              "id": "01b756a1-a86f-4de3-b212-565636261b88",
+              "name": "consent-retrival",
+              "request": {
+                "name": "consent-retrival",
+                "description": {},
+                "url": {
+                  "path": [
+                    "direct-debit-consents",
+                    ":consentId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "{{consentId}}",
+                      "key": "consentId",
+                      "description": "(Required) Consent Id"
+                    },
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{version}}",
+                      "key": "version"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "disabled": false,
+                    "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                    "key": "x-fapi-auth-date",
+                    "value": "{{x-fapi-auth-date}}"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Customer IP address when making a request with the TSP application.",
+                    "key": "x-fapi-customer-ip-address",
+                    "value": "{{x-fapi-customer-ip-address}}"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Unique correlation ID to playback response for each request.",
+                    "key": "x-fapi-interaction-id",
+                    "value": "{{x-fapi-interaction-id}}"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                    "key": "Accept-Language",
+                    "value": "{{Accept-Language}}"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{bearerToken}}"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "99f8586d-9fc1-4989-ae3b-1cbe1da760de",
+                  "name": "OK",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"data\": {\n    \"consentId\": \"sunt labore ex minim\",\n    \"creationDate\": \"1960-09-30T17:55:56.517Z\",\n    \"status\": \"PendingAuthorise\",\n    \"statusUpdateDate\": \"2008-03-02T04:49:03.209Z\",\n    \"permissions\": [\n      \"<string>\"\n    ],\n    \"expirationDate\": \"1967-01-18T09:01:30.170Z\"\n  },\n  \"links\": {\n    \"self\": \"https://ZEULfBSrRF.gnsO+7Wp\",\n    \"prev\": \"http://kbmcM.taTPY7Wo.XZRa\",\n    \"next\": \"https://jOWCyooQhabunemKQTHfNPFkcMeyv.zoaxmXEdfQPVDfdKa0owuzsUvLJO-4lgMGBGHo4uUdLwAPZBZ\"\n  }\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "ae091c54-5f51-4462-9a2e-d66b75eac3f3",
+                  "name": "Bad Request",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"errors\": [\n    {\n      \"code\": \"pariatur nulla\",\n      \"causes\": \"esse ad ullamco mollit id\",\n      \"extendedDetails\": {\n        \"path\": \"dolore est qui\"\n      }\n    }\n  ],\n  \"id\": \"sed \"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "346293a4-bd25-42f3-bc67-1c92a4645af3",
+                  "name": "Unauthorised",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Unauthorized",
+                  "code": 401,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "793675be-1afd-408c-8301-4a16471f0890",
+                  "name": "Forbidden",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "5b645c6b-15ea-4ffb-9cc4-937aac477083",
+                  "name": "Method Not Allowed",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Method Not Allowed",
+                  "code": 405,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"errors\": [\n    {\n      \"code\": \"pariatur nulla\",\n      \"causes\": \"esse ad ullamco mollit id\",\n      \"extendedDetails\": {\n        \"path\": \"dolore est qui\"\n      }\n    }\n  ],\n  \"id\": \"sed \"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "6c93d597-c136-4637-b431-c6516ce94728",
+                  "name": "Not Acceptable",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Not Acceptable",
+                  "code": 406,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"errors\": [\n    {\n      \"code\": \"pariatur nulla\",\n      \"causes\": \"esse ad ullamco mollit id\",\n      \"extendedDetails\": {\n        \"path\": \"dolore est qui\"\n      }\n    }\n  ],\n  \"id\": \"sed \"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "56bbd776-0dd4-44ea-87bd-66f61adcd8eb",
+                  "name": "Too Many Requests",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Too Many Requests",
+                  "code": 429,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "disabled": false,
+                      "description": "Header indicating the time (in seconds) that the TSP could wait before retrying an operation. The bank could consider including this header along with responses with the HTTP status code of 429 (Too Many Requests).",
+                      "key": "Retry-After",
+                      "value": "{{Retry-After}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"message\": \"dolore pariatur\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "37a7aa12-0a56-4da7-8d36-5e12332f6590",
+                  "name": "Internal Server Error",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"errors\": [\n    {\n      \"code\": \"pariatur nulla\",\n      \"causes\": \"esse ad ullamco mollit id\",\n      \"extendedDetails\": {\n        \"path\": \"dolore est qui\"\n      }\n    }\n  ],\n  \"id\": \"sed \"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "fc8ed7cb-6e63-4d1b-a499-b139535b4991",
+                  "name": "Service Unavailable",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Service Unavailable",
+                  "code": 503,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"message\": \"dolore pariatur\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                },
+                {
+                  "id": "0d0ec50a-d358-44ff-8761-197ed14ccb68",
+                  "name": "Gateway Timeout",
+                  "originalRequest": {
+                    "url": {
+                      "path": [
+                        "direct-debit-consents",
+                        ":consentId"
+                      ],
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "query": [],
+                      "variable": [
+                        {
+                          "disabled": false,
+                          "type": "any",
+                          "value": "{{consentId}}",
+                          "key": "consentId",
+                          "description": "(Required) Consent Id"
+                        },
+                        {
+                          "description": {
+                            "content": "",
+                            "type": "text/plain"
+                          },
+                          "type": "any",
+                          "value": "{{version}}",
+                          "key": "version"
+                        }
+                      ]
+                    },
+                    "header": [
+                      {
+                        "description": {
+                          "content": "Added as a part of security scheme: bearer",
+                          "type": "text/plain"
+                        },
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "(Required) Standard HTTP header that allows credentials to be provided to the authorisation/resource server. Based on the OAuth 2.0/OIDC framework, this consists of basic or bearer authentication schemes.",
+                        "key": "Authorization",
+                        "value": "{{Authorization}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer last logged-in time with the TSP application.\nAll dates in the HTTP headers are represented as RFC 7231 Full Dates. An example is below:\nSun, 10 Sep 2017 19:43:31 UTC",
+                        "key": "x-fapi-auth-date",
+                        "value": "{{x-fapi-auth-date}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Customer IP address when making a request with the TSP application.",
+                        "key": "x-fapi-customer-ip-address",
+                        "value": "{{x-fapi-customer-ip-address}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Unique correlation ID to playback response for each request.",
+                        "key": "x-fapi-interaction-id",
+                        "value": "{{x-fapi-interaction-id}}"
+                      },
+                      {
+                        "disabled": false,
+                        "description": "Standard HTTP header to indicate the natural language set used in the response.",
+                        "key": "Accept-Language",
+                        "value": "{{Accept-Language}}"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "method": "GET",
+                    "body": {}
+                  },
+                  "status": "Gateway Timeout",
+                  "code": 504,
+                  "header": [
+                    {
+                      "disabled": false,
+                      "description": "Unique correlation ID to playback response for each request.",
+                      "key": "x-fapi-interaction-id",
+                      "value": "{{x-fapi-interaction-id}}"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "body": "{\n  \"message\": \"dolore pariatur\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      " \n// ********RoostGPT********\n/*\nTest generated by RoostGPT for test MiniProjects using AI Type Open AI and AI Model gpt-4-1106-preview\n\n\nTest generated for /direct-debit-consents/:consentId for http method type get in postman framework\n\n*/\n\n// ********RoostGPT********\n\nlet responseData;\nconst contentType = pm.response.headers.get('Content-Type');\nif(contentType === \"application/xml\"){\n    responseData = xml2Json(responseBody);\n} else{\n    responseData = pm.response.json();\n}\nif (pm.variables.get(\"statusCode\")) {\n  // Compare the statusCode variable with the response code for assertion\n  pm.expect(parseInt(pm.variables.get(\"statusCode\"))).to.be.equal(pm.response.code);\n}\n\n// let responseTime = 800\n// pm.expect(pm.response.responseTime).to.be.below(responseTime);\n\nif (pm.response.code == 200){\n    pm.test(\"OK\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"OK\");\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `data` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`data`)){\n          if(pm.expect(_.get(responseData[0], `data`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `data`, null)).to.equal(\"object\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `data` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`data`)){\n          if(pm.expect(_.get(pm.response.json(), `data`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `data`, null)).to.equal(\"object\");\n          }\n        }\n\n      })\n    }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `data.consentId` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`data.consentId`)){\n          if(pm.expect(_.get(responseData[0], `data.consentId`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `data.consentId`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `data.consentId` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`data.consentId`)){\n          if(pm.expect(_.get(pm.response.json(), `data.consentId`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `data.consentId`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n  \n        pm.test('data.consentId length to be atmost `128`',function(){\n          pm.expect(_.get(responseData, \"data.consentId\", \"\").length).to.be.at.most(128);\n        })\n  \n        pm.test('data.consentId length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"data.consentId\", \"\").length).to.be.at.least(1);\n        })\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `data.creationDate` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`data.creationDate`)){\n          if(pm.expect(_.get(responseData[0], `data.creationDate`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `data.creationDate`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `data.creationDate` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`data.creationDate`)){\n          if(pm.expect(_.get(pm.response.json(), `data.creationDate`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `data.creationDate`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n  \n            pm.test('data.creationDate format to be date-time',function(){\n                pm.expect(_.get(responseData, \"data.creationDate\", \"\")).to.match(/^d{4}-d{2}-d{2}T([01]d|2[0-3]):([0-5]d):([0-5]d)$/);\n            })\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `data.status` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`data.status`)){\n          if(pm.expect(_.get(responseData[0], `data.status`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `data.status`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `data.status` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`data.status`)){\n          if(pm.expect(_.get(pm.response.json(), `data.status`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `data.status`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n \n        pm.test('data.status to be one of enum', function(){ \n          pm.expect(_.get(responseData, \"data.status\", \"\")).to.include.oneOf([\"PendingAuthorise\",\"Rejected\",\"Authorised\",\"Revoked\"]);\n        })\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `data.statusUpdateDate` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`data.statusUpdateDate`)){\n          if(pm.expect(_.get(responseData[0], `data.statusUpdateDate`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `data.statusUpdateDate`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `data.statusUpdateDate` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`data.statusUpdateDate`)){\n          if(pm.expect(_.get(pm.response.json(), `data.statusUpdateDate`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `data.statusUpdateDate`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n  \n            pm.test('data.statusUpdateDate format to be date-time',function(){\n                pm.expect(_.get(responseData, \"data.statusUpdateDate\", \"\")).to.match(/^d{4}-d{2}-d{2}T([01]d|2[0-3]):([0-5]d):([0-5]d)$/);\n            })\n\n        if(Array.isArray(responseData)){\n          pm.test('Response has the `data.permissions` field',function(){\n            if(pm.expect(responseData[0]).to.have.nested.property(`data.permissions`)){\n              if(pm.expect(_.get(responseData[0], `data.permissions`)).to.exist){\n                pm.expect(Array.isArray(_.get(responseData[0], `data.permissions`))).to.equal(true);\n              }\n            }\n\n          })\n        } else {\n          pm.test('Response has the `data.permissions` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`data.permissions`)){\n              if(pm.expect(_.get(pm.response.json(), `data.permissions`)).to.exist){\n                pm.expect(Array.isArray(_.get(pm.response.json(), `data.permissions`))).to.equal(true);\n              }\n            }\n\n          })\n        }      \n          \n  \n        pm.test('data.permissions length to be alteast `1`',function(){\n          pm.expect(_.get(responseData, \"data.permissions\", \"\").length).to.be.at.least(1);\n        })\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `data.expirationDate` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`data.expirationDate`)){\n          if(pm.expect(_.get(responseData[0], `data.expirationDate`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `data.expirationDate`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `data.expirationDate` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`data.expirationDate`)){\n          if(pm.expect(_.get(pm.response.json(), `data.expirationDate`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `data.expirationDate`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n  \n            pm.test('data.expirationDate format to be date-time',function(){\n                pm.expect(_.get(responseData, \"data.expirationDate\", \"\")).to.match(/^d{4}-d{2}-d{2}T([01]d|2[0-3]):([0-5]d):([0-5]d)$/);\n            })\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `links` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`links`)){\n          if(pm.expect(_.get(responseData[0], `links`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `links`, null)).to.equal(\"object\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `links` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`links`)){\n          if(pm.expect(_.get(pm.response.json(), `links`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `links`, null)).to.equal(\"object\");\n          }\n        }\n\n      })\n    }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `links.self` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`links.self`)){\n          if(pm.expect(_.get(responseData[0], `links.self`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `links.self`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `links.self` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`links.self`)){\n          if(pm.expect(_.get(pm.response.json(), `links.self`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `links.self`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `links.prev` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`links.prev`)){\n          if(pm.expect(_.get(responseData[0], `links.prev`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `links.prev`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `links.prev` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`links.prev`)){\n          if(pm.expect(_.get(pm.response.json(), `links.prev`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `links.prev`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `links.next` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`links.next`)){\n          if(pm.expect(_.get(responseData[0], `links.next`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `links.next`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `links.next` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`links.next`)){\n          if(pm.expect(_.get(pm.response.json(), `links.next`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `links.next`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n});\n}\n\nif (pm.response.code == 400){\n    pm.test(\"Bad Request\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Bad Request\");\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `id` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`id`)){\n          if(pm.expect(_.get(responseData[0], `id`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `id`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `id` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`id`)){\n          if(pm.expect(_.get(pm.response.json(), `id`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `id`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n  \n        pm.test('id length to be atmost `40`',function(){\n          pm.expect(_.get(responseData, \"id\", \"\").length).to.be.at.most(40);\n        })\n  \n        pm.test('id length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"id\", \"\").length).to.be.at.least(1);\n        })\n\n        if(Array.isArray(responseData)){\n          pm.test('Response has the `errors` field',function(){\n            if(pm.expect(responseData[0]).to.have.nested.property(`errors`)){\n              if(pm.expect(_.get(responseData[0], `errors`)).to.exist){\n                pm.expect(Array.isArray(_.get(responseData[0], `errors`))).to.equal(true);\n              }\n            }\n\n          })\n        } else {\n          pm.test('Response has the `errors` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`errors`)){\n              if(pm.expect(_.get(pm.response.json(), `errors`)).to.exist){\n                pm.expect(Array.isArray(_.get(pm.response.json(), `errors`))).to.equal(true);\n              }\n            }\n\n          })\n        }      \n          \n  \n        pm.test('errors length to be alteast `1`',function(){\n          pm.expect(_.get(responseData, \"errors\", \"\").length).to.be.at.least(1);\n        })\n\n      pm.test(`Each object in the errors field has all the required fields`,function(){\n          pm.expect(pm.response.json()).to.have.nested.property(`errors`);\n          let errorsArray = _.get(pm.response.json(), `errors`, \"\");\n          for (let errors_it = 0; errors_it < errorsArray.length; errors_it++) {\n            let iterator = errors_it;\n            \t\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'code' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].code`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].code`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].code' has 'code' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].code`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].code`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'causes' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].causes`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].causes`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].causes' has 'causes' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].causes`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].causes`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n  \n        pm.test('errors[${errors_it}].causes length to be atmost `500`',function(){\n          pm.expect(_.get(responseData, \"errors[${errors_it}].causes\", \"\").length).to.be.at.most(500);\n        })\n  \n        pm.test('errors[${errors_it}].causes length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"errors[${errors_it}].causes\", \"\").length).to.be.at.least(1);\n        })\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'extendedDetails' as 'object'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].extendedDetails`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].extendedDetails`, null)).to.equal(\"object\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].extendedDetails' has 'extendedDetails' as 'object'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].extendedDetails`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].extendedDetails`, null)).to.equal(\"object\");\n          }\n      })\n\n    }\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'path' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].extendedDetails.path`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].extendedDetails.path`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].extendedDetails.path' has 'path' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].extendedDetails.path`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].extendedDetails.path`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n  \n        pm.test('errors[${errors_it}].extendedDetails.path length to be atmost `500`',function(){\n          pm.expect(_.get(responseData, \"errors[${errors_it}].extendedDetails.path\", \"\").length).to.be.at.most(500);\n        })\n  \n        pm.test('errors[${errors_it}].extendedDetails.path length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"errors[${errors_it}].extendedDetails.path\", \"\").length).to.be.at.least(1);\n        })\n\n          }\n\n      })\n});\n}\n\nif (pm.response.code == 401){\n    pm.test(\"Unauthorised\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Unauthorized\");});\n}\n\nif (pm.response.code == 403){\n    pm.test(\"Forbidden\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Forbidden\");});\n}\n\nif (pm.response.code == 405){\n    pm.test(\"Method Not Allowed\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Method Not Allowed\");\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `id` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`id`)){\n          if(pm.expect(_.get(responseData[0], `id`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `id`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `id` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`id`)){\n          if(pm.expect(_.get(pm.response.json(), `id`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `id`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n  \n        pm.test('id length to be atmost `40`',function(){\n          pm.expect(_.get(responseData, \"id\", \"\").length).to.be.at.most(40);\n        })\n  \n        pm.test('id length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"id\", \"\").length).to.be.at.least(1);\n        })\n\n        if(Array.isArray(responseData)){\n          pm.test('Response has the `errors` field',function(){\n            if(pm.expect(responseData[0]).to.have.nested.property(`errors`)){\n              if(pm.expect(_.get(responseData[0], `errors`)).to.exist){\n                pm.expect(Array.isArray(_.get(responseData[0], `errors`))).to.equal(true);\n              }\n            }\n\n          })\n        } else {\n          pm.test('Response has the `errors` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`errors`)){\n              if(pm.expect(_.get(pm.response.json(), `errors`)).to.exist){\n                pm.expect(Array.isArray(_.get(pm.response.json(), `errors`))).to.equal(true);\n              }\n            }\n\n          })\n        }      \n          \n  \n        pm.test('errors length to be alteast `1`',function(){\n          pm.expect(_.get(responseData, \"errors\", \"\").length).to.be.at.least(1);\n        })\n\n      pm.test(`Each object in the errors field has all the required fields`,function(){\n          pm.expect(pm.response.json()).to.have.nested.property(`errors`);\n          let errorsArray = _.get(pm.response.json(), `errors`, \"\");\n          for (let errors_it = 0; errors_it < errorsArray.length; errors_it++) {\n            let iterator = errors_it;\n            \t\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'code' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].code`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].code`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].code' has 'code' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].code`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].code`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'causes' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].causes`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].causes`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].causes' has 'causes' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].causes`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].causes`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n  \n        pm.test('errors[${errors_it}].causes length to be atmost `500`',function(){\n          pm.expect(_.get(responseData, \"errors[${errors_it}].causes\", \"\").length).to.be.at.most(500);\n        })\n  \n        pm.test('errors[${errors_it}].causes length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"errors[${errors_it}].causes\", \"\").length).to.be.at.least(1);\n        })\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'extendedDetails' as 'object'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].extendedDetails`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].extendedDetails`, null)).to.equal(\"object\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].extendedDetails' has 'extendedDetails' as 'object'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].extendedDetails`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].extendedDetails`, null)).to.equal(\"object\");\n          }\n      })\n\n    }\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'path' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].extendedDetails.path`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].extendedDetails.path`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].extendedDetails.path' has 'path' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].extendedDetails.path`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].extendedDetails.path`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n  \n        pm.test('errors[${errors_it}].extendedDetails.path length to be atmost `500`',function(){\n          pm.expect(_.get(responseData, \"errors[${errors_it}].extendedDetails.path\", \"\").length).to.be.at.most(500);\n        })\n  \n        pm.test('errors[${errors_it}].extendedDetails.path length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"errors[${errors_it}].extendedDetails.path\", \"\").length).to.be.at.least(1);\n        })\n\n          }\n\n      })\n});\n}\n\nif (pm.response.code == 406){\n    pm.test(\"Not Acceptable\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Not Acceptable\");\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `id` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`id`)){\n          if(pm.expect(_.get(responseData[0], `id`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `id`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `id` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`id`)){\n          if(pm.expect(_.get(pm.response.json(), `id`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `id`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n  \n        pm.test('id length to be atmost `40`',function(){\n          pm.expect(_.get(responseData, \"id\", \"\").length).to.be.at.most(40);\n        })\n  \n        pm.test('id length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"id\", \"\").length).to.be.at.least(1);\n        })\n\n        if(Array.isArray(responseData)){\n          pm.test('Response has the `errors` field',function(){\n            if(pm.expect(responseData[0]).to.have.nested.property(`errors`)){\n              if(pm.expect(_.get(responseData[0], `errors`)).to.exist){\n                pm.expect(Array.isArray(_.get(responseData[0], `errors`))).to.equal(true);\n              }\n            }\n\n          })\n        } else {\n          pm.test('Response has the `errors` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`errors`)){\n              if(pm.expect(_.get(pm.response.json(), `errors`)).to.exist){\n                pm.expect(Array.isArray(_.get(pm.response.json(), `errors`))).to.equal(true);\n              }\n            }\n\n          })\n        }      \n          \n  \n        pm.test('errors length to be alteast `1`',function(){\n          pm.expect(_.get(responseData, \"errors\", \"\").length).to.be.at.least(1);\n        })\n\n      pm.test(`Each object in the errors field has all the required fields`,function(){\n          pm.expect(pm.response.json()).to.have.nested.property(`errors`);\n          let errorsArray = _.get(pm.response.json(), `errors`, \"\");\n          for (let errors_it = 0; errors_it < errorsArray.length; errors_it++) {\n            let iterator = errors_it;\n            \t\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'code' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].code`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].code`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].code' has 'code' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].code`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].code`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'causes' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].causes`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].causes`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].causes' has 'causes' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].causes`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].causes`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n  \n        pm.test('errors[${errors_it}].causes length to be atmost `500`',function(){\n          pm.expect(_.get(responseData, \"errors[${errors_it}].causes\", \"\").length).to.be.at.most(500);\n        })\n  \n        pm.test('errors[${errors_it}].causes length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"errors[${errors_it}].causes\", \"\").length).to.be.at.least(1);\n        })\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'extendedDetails' as 'object'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].extendedDetails`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].extendedDetails`, null)).to.equal(\"object\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].extendedDetails' has 'extendedDetails' as 'object'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].extendedDetails`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].extendedDetails`, null)).to.equal(\"object\");\n          }\n      })\n\n    }\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'path' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].extendedDetails.path`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].extendedDetails.path`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].extendedDetails.path' has 'path' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].extendedDetails.path`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].extendedDetails.path`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n  \n        pm.test('errors[${errors_it}].extendedDetails.path length to be atmost `500`',function(){\n          pm.expect(_.get(responseData, \"errors[${errors_it}].extendedDetails.path\", \"\").length).to.be.at.most(500);\n        })\n  \n        pm.test('errors[${errors_it}].extendedDetails.path length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"errors[${errors_it}].extendedDetails.path\", \"\").length).to.be.at.least(1);\n        })\n\n          }\n\n      })\n});\n}\n\nif (pm.response.code == 429){\n    pm.test(\"Too Many Requests\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Too Many Requests\");\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `message` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`message`)){\n          if(pm.expect(_.get(responseData[0], `message`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `message`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `message` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n          if(pm.expect(_.get(pm.response.json(), `message`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n});\n}\n\nif (pm.response.code == 500){\n    pm.test(\"Internal Server Error\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Internal Server Error\");\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `id` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`id`)){\n          if(pm.expect(_.get(responseData[0], `id`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `id`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `id` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`id`)){\n          if(pm.expect(_.get(pm.response.json(), `id`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `id`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n  \n        pm.test('id length to be atmost `40`',function(){\n          pm.expect(_.get(responseData, \"id\", \"\").length).to.be.at.most(40);\n        })\n  \n        pm.test('id length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"id\", \"\").length).to.be.at.least(1);\n        })\n\n        if(Array.isArray(responseData)){\n          pm.test('Response has the `errors` field',function(){\n            if(pm.expect(responseData[0]).to.have.nested.property(`errors`)){\n              if(pm.expect(_.get(responseData[0], `errors`)).to.exist){\n                pm.expect(Array.isArray(_.get(responseData[0], `errors`))).to.equal(true);\n              }\n            }\n\n          })\n        } else {\n          pm.test('Response has the `errors` field',function(){\n            if(pm.expect(pm.response.json()).to.have.nested.property(`errors`)){\n              if(pm.expect(_.get(pm.response.json(), `errors`)).to.exist){\n                pm.expect(Array.isArray(_.get(pm.response.json(), `errors`))).to.equal(true);\n              }\n            }\n\n          })\n        }      \n          \n  \n        pm.test('errors length to be alteast `1`',function(){\n          pm.expect(_.get(responseData, \"errors\", \"\").length).to.be.at.least(1);\n        })\n\n      pm.test(`Each object in the errors field has all the required fields`,function(){\n          pm.expect(pm.response.json()).to.have.nested.property(`errors`);\n          let errorsArray = _.get(pm.response.json(), `errors`, \"\");\n          for (let errors_it = 0; errors_it < errorsArray.length; errors_it++) {\n            let iterator = errors_it;\n            \t\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'code' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].code`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].code`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].code' has 'code' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].code`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].code`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'causes' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].causes`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].causes`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].causes' has 'causes' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].causes`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].causes`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n  \n        pm.test('errors[${errors_it}].causes length to be atmost `500`',function(){\n          pm.expect(_.get(responseData, \"errors[${errors_it}].causes\", \"\").length).to.be.at.most(500);\n        })\n  \n        pm.test('errors[${errors_it}].causes length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"errors[${errors_it}].causes\", \"\").length).to.be.at.least(1);\n        })\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'extendedDetails' as 'object'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].extendedDetails`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].extendedDetails`, null)).to.equal(\"object\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].extendedDetails' has 'extendedDetails' as 'object'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].extendedDetails`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].extendedDetails`, null)).to.equal(\"object\");\n          }\n      })\n\n    }\n\n      if(Array.isArray(responseData)) {\n        pm.test(`${iterator} element of array 'errorsArray' has 'path' as 'string'`,function(){  \n          if(pm.expect(_.get(responseData[0], `errors[${errors_it}].extendedDetails.path`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0],`errors[${errors_it}].extendedDetails.path`, null)).to.equal(\"string\");\n          }\n        })\n\n      } else {      \n        pm.test(`${iterator} element of array 'errors[${errors_it}].extendedDetails.path' has 'path' as 'string'`,function(){ \n          if(pm.expect(_.get(pm.response.json(), `errors[${errors_it}].extendedDetails.path`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(),`errors[${errors_it}].extendedDetails.path`, null)).to.equal(\"string\");\n          }\n      })\n\n    }\n  \n        pm.test('errors[${errors_it}].extendedDetails.path length to be atmost `500`',function(){\n          pm.expect(_.get(responseData, \"errors[${errors_it}].extendedDetails.path\", \"\").length).to.be.at.most(500);\n        })\n  \n        pm.test('errors[${errors_it}].extendedDetails.path length to be alteast `1`',function(){\n            pm.expect(_.get(responseData, \"errors[${errors_it}].extendedDetails.path\", \"\").length).to.be.at.least(1);\n        })\n\n          }\n\n      })\n});\n}\n\nif (pm.response.code == 503){\n    pm.test(\"Service Unavailable\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Service Unavailable\");\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `message` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`message`)){\n          if(pm.expect(_.get(responseData[0], `message`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `message`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `message` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n          if(pm.expect(_.get(pm.response.json(), `message`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n});\n}\n\nif (pm.response.code == 504){\n    pm.test(\"Gateway Timeout\", function () {\n      pm.expect(pm.response.status).to.be.eql(\"Gateway Timeout\");\n    if(Array.isArray(responseData)) {\n      pm.test('Response has the `message` field',function(){\n        if(pm.expect(responseData[0]).to.have.nested.property(`message`)){\n          if(pm.expect(_.get(responseData[0], `message`, null)).to.exist){\n            pm.expect(typeof _.get(responseData[0], `message`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    } else {\n      pm.test('Response has the `message` field',function(){\n        if(pm.expect(pm.response.json()).to.have.nested.property(`message`)){\n          if(pm.expect(_.get(pm.response.json(), `message`, null)).to.exist){\n            pm.expect(typeof _.get(pm.response.json(), `message`, null)).to.equal(\"string\");\n          }\n        }\n\n      })\n    }\n});\n}\n"
+                    ],
+                    "type": "text/javascript"
+                  }
+                }
+              ],
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              }
+            },
+            null
+          ],
+          "event": []
+        }
+      ],
+      "event": []
+    },
+    null,
+    null,
+    {
+      "id": "3cb77bfc-dfc8-40c0-9d35-a39b1e284c4a",
+      "name": "status",
+      "item": [
+        null,
+        null
+      ],
+      "event": []
+    },
+    null,
+    null
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "v1.0",
+      "key": "version"
+    },
+    {
+      "type": "string",
+      "value": "https://hsbcdeveloperportalpreprod.digitalapicraft.com:8085/https://sandbox.ob.business.hsbc.com.hk/mock/open-banking/v1.0/direct-debit",
+      "key": "baseUrl"
+    },
+    {
+      "type": "integer",
+      "value": 200,
+      "key": "statusCode"
+    }
+  ],
+  "info": {
+    "_postman_id": "10940c73-d9eb-4730-8dc9-73bafaf4602f",
+    "name": "Real-time Direct Debit API Specification for HK CMB",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Swagger for Real-time Direct Debit API Specification",
+      "type": "text/plain"
+    }
+  }
+}
