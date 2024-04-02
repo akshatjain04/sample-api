@@ -1,0 +1,11 @@
+consentId,version,statusCode,scenario
+adipisicing,1,200,OK
+169.254.169.254,1,400,Bad Request
+169.254.169.254,1,401,Unauthorised
+169.254.169.254,1,403,Forbidden
+169.254.169.254,1,405,Method Not Allowed
+169.254.169.254,1,406,Not Acceptable
+169.254.169.254,1,429,Too Many Requests
+169.254.169.254,1,500,Internal Server Error
+169.254.169.254,1,503,Service Unavailable
+169.254.169.254,1,504,Gateway Timeout
