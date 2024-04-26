@@ -1,0 +1,11 @@
+Authorization^|^AdditionalCSVvaluInfo^|^x-fapi-customer-ip-address^|^x-fapi-auth-date^|^x-fapi-interaction-id^|^x-idempotency-key^|^reportType^|^reportingDate^|^creditorAccount^|^bankCode^|^accountIdentification^|^currency^|^accountSchemeName^|^accountSubType^|^statusCode
+Auth123^|^LbGpjj8KaH5wrEfg^|^192.168.1.1^|^2022-04-01^|^Interact123^|^Idempotency123^|^DDAReport^|^2022-04-02^|^Account123^|^123^|^Identify123^|^USD^|^BBAN^|^Current Account^|^201
+Auth456^|^LbGpjj8KaH5wrEfg^|^192.168.1.2^|^2022-04-03^|^Interact456^|^Idempotency456^|^DDIReport^|^2022-04-04^|^Account456^|^456^|^Identify456^|^EUR^|^BBAN^|^Savings Account^|^400
+Auth789^|^LbGpjj8KaH5wrEfg^|^192.168.1.3^|^2022-04-05^|^Interact789^|^Idempotency789^|^DDAReport^|^2022-04-06^|^Account789^|^789^|^Identify789^|^GBP^|^BBAN^|^Student Account^|^401
+Auth321^|^LbGpjj8KaH5wrEfg^|^192.168.1.4^|^2022-04-07^|^Interact321^|^Idempotency321^|^DDIReport^|^2022-04-08^|^Account321^|^321^|^Identify321^|^JPY^|^BBAN^|^CACC^|^403
+Auth654^|^LbGpjj8KaH5wrEfg^|^192.168.1.5^|^2022-04-09^|^Interact654^|^Idempotency654^|^DDAReport^|^2022-04-10^|^Account654^|^654^|^Identify654^|^AUD^|^BBAN^|^CARD^|^404
+Auth987^|^LbGpjj8KaH5wrEfg^|^192.168.1.6^|^2022-04-11^|^Interact987^|^Idempotency987^|^DDIReport^|^2022-04-12^|^Account987^|^987^|^Identify987^|^CAD^|^BBAN^|^DDA – Current & Savings Accounts^|^405
+Auth135^|^LbGpjj8KaH5wrEfg^|^192.168.1.7^|^2022-04-13^|^Interact135^|^Idempotency135^|^DDAReport^|^2022-04-14^|^Account135^|^135^|^Identify135^|^CHF^|^BBAN^|^CDA – Term Deposits^|^406
+Auth246^|^LbGpjj8KaH5wrEfg^|^192.168.1.8^|^2022-04-15^|^Interact246^|^Idempotency246^|^DDIReport^|^2022-04-16^|^Account246^|^246^|^Identify246^|^NZD^|^BBAN^|^ILA – Loans^|^415
+Auth357^|^LbGpjj8KaH5wrEfg^|^192.168.1.9^|^2022-04-17^|^Interact357^|^Idempotency357^|^DDAReport^|^2022-04-18^|^Account357^|^357^|^Identify357^|^SGD^|^BBAN^|^CCA – Credit Cards^|^500
+Auth468^|^LbGpjj8KaH5wrEfg^|^192.168.1.10^|^2022-04-19^|^Interact468^|^Idempotency468^|^DDIReport^|^2022-04-20^|^Account468^|^468^|^Identify468^|^CNY^|^BBAN^|^OTH - Other^|^201

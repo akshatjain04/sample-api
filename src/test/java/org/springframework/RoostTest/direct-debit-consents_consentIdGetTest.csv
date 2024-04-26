@@ -1,0 +1,11 @@
+consentId^|^AdditionalCSVvaluInfo^|^Authorization^|^x-fapi-auth-date^|^x-fapi-customer-ip-address^|^x-fapi-interaction-id^|^Accept-Language^|^statusCode
+1234ASD^|^169.254.169.254^|^Bearer token1^|^2022-01-01^|^192.168.0.1^|^Interaction1^|^en-HK^|^200
+5678QWE^|^169.254.169.254^|^Bearer token2^|^2022-01-02^|^192.168.0.2^|^Interaction2^|^zh-HK^|^400
+9012ZXC^|^169.254.169.254^|^Bearer token3^|^2022-01-03^|^192.168.0.3^|^Interaction3^|^zh-CN^|^401
+3456RTY^|^169.254.169.254^|^Bearer token4^|^2022-01-04^|^192.168.0.4^|^Interaction4^|^en-HK^|^403
+7890FDS^|^169.254.169.254^|^Bearer token5^|^2022-01-05^|^192.168.0.5^|^Interaction5^|^zh-HK^|^405
+2345GFD^|^169.254.169.254^|^Bearer token6^|^2022-01-06^|^192.168.0.6^|^Interaction6^|^zh-CN^|^406
+6789HJK^|^169.254.169.254^|^Bearer token7^|^2022-01-07^|^192.168.0.7^|^Interaction7^|^en-HK^|^429
+0123BNM^|^169.254.169.254^|^Bearer token8^|^2022-01-08^|^192.168.0.8^|^Interaction8^|^zh-HK^|^500
+4567VBN^|^169.254.169.254^|^Bearer token9^|^2022-01-09^|^192.168.0.9^|^Interaction9^|^zh-CN^|^503
+8901XCV^|^169.254.169.254^|^Bearer token10^|^2022-01-10^|^192.168.0.10^|^Interaction10^|^en-HK^|^504

@@ -1,0 +1,11 @@
+Authorization^|^AdditionalCSVvaluInfo^|^x-fapi-customer-ip-address^|^x-fapi-auth-date^|^x-fapi-interaction-id^|^x-idempotency-key^|^mandateIdentification^|^otpIdentificationNumber^|^otpPassword^|^creditorAccount^|^bankCode^|^accountIdentification^|^currency^|^accountSchemeName^|^accountSubType^|^statusCode
+Auth1^|^LbGpjj8KaH5wrEfg^|^192.168.1.1^|^2021-12-05^|^Interact1^|^IdempotencyKey1^|^Mandate1^|^OtpId1^|^OtpPass1^|^CreditorAcc1^|^001^|^AccId1^|^USD^|^BBAN^|^Current Account^|^201
+Auth2^|^LbGpjj8KaH5wrEfg^|^192.168.1.2^|^2021-12-06^|^Interact2^|^IdempotencyKey2^|^Mandate2^|^OtpId2^|^OtpPass2^|^CreditorAcc2^|^002^|^AccId2^|^EUR^|^BBAN^|^Savings Account^|^400
+Auth3^|^LbGpjj8KaH5wrEfg^|^192.168.1.3^|^2021-12-07^|^Interact3^|^IdempotencyKey3^|^Mandate3^|^OtpId3^|^OtpPass3^|^CreditorAcc3^|^003^|^AccId3^|^GBP^|^BBAN^|^Student Account^|^401
+Auth4^|^LbGpjj8KaH5wrEfg^|^192.168.1.4^|^2021-12-08^|^Interact4^|^IdempotencyKey4^|^Mandate4^|^OtpId4^|^OtpPass4^|^CreditorAcc4^|^004^|^AccId4^|^JPY^|^BBAN^|^CACC^|^403
+Auth5^|^LbGpjj8KaH5wrEfg^|^192.168.1.5^|^2021-12-09^|^Interact5^|^IdempotencyKey5^|^Mandate5^|^OtpId5^|^OtpPass5^|^CreditorAcc5^|^005^|^AccId5^|^CAD^|^BBAN^|^CARD^|^404
+Auth6^|^LbGpjj8KaH5wrEfg^|^192.168.1.6^|^2021-12-10^|^Interact6^|^IdempotencyKey6^|^Mandate6^|^OtpId6^|^OtpPass6^|^CreditorAcc6^|^006^|^AccId6^|^AUD^|^BBAN^|^DDA – Current & Savings Accounts^|^405
+Auth7^|^LbGpjj8KaH5wrEfg^|^192.168.1.7^|^2021-12-11^|^Interact7^|^IdempotencyKey7^|^Mandate7^|^OtpId7^|^OtpPass7^|^CreditorAcc7^|^007^|^AccId7^|^CHF^|^BBAN^|^CDA – Term Deposits^|^406
+Auth8^|^LbGpjj8KaH5wrEfg^|^192.168.1.8^|^2021-12-12^|^Interact8^|^IdempotencyKey8^|^Mandate8^|^OtpId8^|^OtpPass8^|^CreditorAcc8^|^008^|^AccId8^|^CNY^|^BBAN^|^ILA – Loans^|^415
+Auth9^|^LbGpjj8KaH5wrEfg^|^192.168.1.9^|^2021-12-13^|^Interact9^|^IdempotencyKey9^|^Mandate9^|^OtpId9^|^OtpPass9^|^CreditorAcc9^|^009^|^AccId9^|^INR^|^BBAN^|^CCA – Credit Cards^|^500
+Auth10^|^LbGpjj8KaH5wrEfg^|^192.168.1.10^|^2021-12-14^|^Interact10^|^IdempotencyKey10^|^Mandate10^|^OtpId10^|^OtpPass10^|^CreditorAcc10^|^010^|^AccId10^|^BRL^|^BBAN^|^OTH - Other^|^201
