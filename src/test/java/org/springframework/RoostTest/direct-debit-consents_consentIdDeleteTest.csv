@@ -1,0 +1,11 @@
+consentId^|^AdditionalCSVvaluInfo^|^Authorization^|^x-fapi-auth-date^|^x-fapi-customer-ip-address^|^x-fapi-interaction-id^|^Accept-Language^|^statusCode
+consent123^|^169.254.169.254^|^auth456^|^2022-06-01^|^192.168.1.1^|^interaction789^|^en-HK^|^204
+consent124^|^169.254.169.254^|^auth457^|^2022-06-02^|^192.168.1.2^|^interaction790^|^zh-HK^|^400
+consent125^|^169.254.169.254^|^auth458^|^2022-06-03^|^192.168.1.3^|^interaction791^|^zh-CN^|^401
+consent126^|^169.254.169.254^|^auth459^|^2022-06-04^|^192.168.1.4^|^interaction792^|^en-HK^|^403
+consent127^|^169.254.169.254^|^auth460^|^2022-06-05^|^192.168.1.5^|^interaction793^|^zh-HK^|^405
+consent128^|^169.254.169.254^|^auth461^|^2022-06-06^|^192.168.1.6^|^interaction794^|^zh-CN^|^406
+consent129^|^169.254.169.254^|^auth462^|^2022-06-07^|^192.168.1.7^|^interaction795^|^en-HK^|^429
+consent130^|^169.254.169.254^|^auth463^|^2022-06-08^|^192.168.1.8^|^interaction796^|^zh-HK^|^500
+consent131^|^169.254.169.254^|^auth464^|^2022-06-09^|^192.168.1.9^|^interaction797^|^zh-CN^|^503
+consent132^|^169.254.169.254^|^auth465^|^2022-06-10^|^192.168.1.10^|^interaction798^|^en-HK^|^504

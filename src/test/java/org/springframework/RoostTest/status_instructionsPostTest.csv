@@ -1,0 +1,11 @@
+Authorization^|^AdditionalCSVvaluInfo^|^x-fapi-customer-ip-address^|^x-fapi-auth-date^|^x-fapi-interaction-id^|^x-idempotency-key^|^merchantInstructionIdentification^|^creditorAccount^|^bankCode^|^accountIdentification^|^currency^|^accountSchemeName^|^accountSubType^|^statusCode
+auth1^|^val1^|^192.0.2.0^|^2022-01-01^|^interact1^|^idem1^|^merchant1^|^{ "id": "creditor1" }^|^001^|^account1^|^USD^|^BBAN^|^Current Account^|^201
+auth2^|^val2^|^192.0.2.1^|^2022-01-02^|^interact2^|^idem2^|^merchant2^|^{ "id": "creditor2" }^|^002^|^account2^|^EUR^|^BBAN^|^Savings Account^|^400
+auth3^|^val3^|^192.0.2.2^|^2022-01-03^|^interact3^|^idem3^|^merchant3^|^{ "id": "creditor3" }^|^003^|^account3^|^GBP^|^BBAN^|^Student Account^|^401
+auth4^|^val4^|^192.0.2.3^|^2022-01-04^|^interact4^|^idem4^|^merchant4^|^{ "id": "creditor4" }^|^004^|^account4^|^JPY^|^BBAN^|^CACC^|^403
+auth5^|^val5^|^192.0.2.4^|^2022-01-05^|^interact5^|^idem5^|^merchant5^|^{ "id": "creditor5" }^|^005^|^account5^|^CAD^|^BBAN^|^CARD^|^404
+auth6^|^val6^|^192.0.2.5^|^2022-01-06^|^interact6^|^idem6^|^merchant6^|^{ "id": "creditor6" }^|^006^|^account6^|^AUD^|^BBAN^|^DDA^|^405
+auth7^|^val7^|^192.0.2.6^|^2022-01-07^|^interact7^|^idem7^|^merchant7^|^{ "id": "creditor7" }^|^007^|^account7^|^CNY^|^BBAN^|^CDA^|^406
+auth8^|^val8^|^192.0.2.7^|^2022-01-08^|^interact8^|^idem8^|^merchant8^|^{ "id": "creditor8" }^|^008^|^account8^|^INR^|^BBAN^|^ILA^|^415
+auth9^|^val9^|^192.0.2.8^|^2022-01-09^|^interact9^|^idem9^|^merchant9^|^{ "id": "creditor9" }^|^009^|^account9^|^BRL^|^BBAN^|^CCA^|^500
+auth10^|^val10^|^192.0.2.9^|^2022-01-10^|^interact10^|^idem10^|^merchant10^|^{ "id": "creditor10" }^|^010^|^account10^|^ZAR^|^BBAN^|^OTH^|^201
