@@ -1,0 +1,9 @@
+searchString,statusCode,scenario
+"john.smith@acme-corp.com",200,"Search results matching the filter criteria"
+"System Analyst",200,"Search results matching the filter criteria"
+"John Smith",200,"Search results matching the filter criteria"
+"d290f1ee-6c54-4b01-90e6-d701748f0851",200,"Search results matching the filter criteria"
+"john.smith@acme-corp.com",400,"Bad input"
+"System Analyst",400,"Bad input"
+"John Smith",400,"Bad input"
+"d290f1ee-6c54-4b01-90e6-d701748f0851",400,"Bad input"
