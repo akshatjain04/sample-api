@@ -1,0 +1,4 @@
+email,jobTitle,name,id,statusCode,scenario
+"john.smith@acme-corp.com","System Analyst","John Smith","d290f1ee-6c54-4b01-90e6-d701748f0851",201,"employee created"
+"invalid@invalid.com","Invalid Job","Invalid Name","invalid-id",400,"invalid input, object invalid"
+"existing@existing.com","Existing Job","Existing Name","existing-id",409,"an existing employee already exists"
