@@ -1,0 +1,2 @@
+Authorization,koreUserId,botId,accountId,customerId,sourceAccountId,amount,currency,frontImage,backImage
+"authToken123","koreUser1","bot123","acc9876","1045300","""1042345""","""1042222""","""USD""","""https://google.com/front.jpg""","""https://google.com/back.jpg"""

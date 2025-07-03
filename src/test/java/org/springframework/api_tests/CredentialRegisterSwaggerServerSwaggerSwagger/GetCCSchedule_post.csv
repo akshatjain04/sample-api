@@ -1,0 +1,3 @@
+auth,botId,accountId,koreUserId,customerId,status
+"Bearer xyz-token","bot-12345","acc-67890","user-345","1045300","Pending"
+"Bearer xyz-token","bot-67890","acc-34567","user-123","1045300","Failed"
