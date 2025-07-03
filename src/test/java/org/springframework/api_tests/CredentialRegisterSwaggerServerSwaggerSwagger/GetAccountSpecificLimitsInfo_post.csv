@@ -1,0 +1,2 @@
+Authorization,botId,accountId,customerId,accountNumber,cardNumber
+"Bearer token_value","bot_12345","account_6789","1045300","[""1042345"",""1234567""]","[""9876543210""]"

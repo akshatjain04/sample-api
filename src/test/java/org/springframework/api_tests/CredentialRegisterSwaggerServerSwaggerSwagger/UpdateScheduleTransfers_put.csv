@@ -1,0 +1,2 @@
+authorization,botId,accountId,paymentId,customerId,amount,sourceAccountId,targetAccountId,scheduledDate
+"token-abcdef12345678","bot001","acc12345",97087,"""1045300""","5","12345","54321","1698076800"
